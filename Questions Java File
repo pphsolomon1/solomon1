@@ -1,0 +1,63 @@
+package com.example.android.simplequizapp;
+
+public class Questions {
+    public String mQuestions[]={
+            "What is the capital city of Ghana",
+            "What is the capital city of Nigeria",
+            "What is the capital city of Kenya",
+            "What is the capital city of China",
+            "What is the capital city of Togo",
+            "What is the capital city of Angola",
+            "What is the capital city of Afghanistan",
+            "What is the capital city of Argentina",
+            "What is the capital city of Austria",
+
+};
+    private String mChoices [] [] = {
+            {"Kumasi",  "Accra" , " Cape town" ,"Nairobi"},
+            {"Abuja",  "Lagos" , "Baku" , "Kabul"},
+            {"Nairobi",  "Dhaka" , "Tirana" , "Abuja"},
+            {"Beijing",  "Wuhan" , "Guangzhou" , "Cape coast"},
+            {"Abuja",  "Kumasi" , "Accra" , "Lome"},
+            {"Luanda",  "Minsk" , "Sofia" , "Lome"},
+            {"Dhaka",  "Luanda" , "Algiers" , "Kabul"},
+            {"Gaborone ",  "Praia" , "Buenos Aires" , "Saturn"},
+            {"Dhaka",  "Luanda" , "Vienna" , "Kabul"},
+
+    };
+    private String mCorrectAnswers[] = { "Accra", "Abuja", "Nairobi", "Beijing", "Lome", "Luanda", "Kabul", "Buenos Aires", "Austria"};
+
+    public String[] getQuestions(int a) {
+        String question = mQuestions[a];
+        return mQuestions;
+    }
+    public String getChoice1(int a) {
+        String choice = mChoices[a][0];
+        return choice;
+    }
+    public String getChoice2(int a) {
+        String choice = mChoices[a][1];
+        return choice;
+    }
+    public String getChoice3(int a) {
+        String choice = mChoices[a][2];
+        return choice;
+    }
+    public String getChoice4(int a) {
+        String choice = mChoices[a][3];
+        return choice;
+    }
+    public String getCorrectAnswer(int a) {
+        String answer  = mCorrectAnswers[a];
+        return answer;
+
+    }
+
+}
+
+
+
+
+
+
+
